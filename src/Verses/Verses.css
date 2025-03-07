@@ -1,0 +1,62 @@
+.verses-header {
+  display: flex;
+  flex-direction: column;
+  padding-block: 1.2rem;
+  background-color: #7b2e2f;
+  color: #ffffff;
+}
+
+.verses-header h1 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.verses-header > div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.verses-header-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.verses-back-btn {
+  background: transparent;
+  border: 0;
+}
+
+.verses-div {
+  width: 95%;
+  /* margin: 2rem auto; */
+}
+
+.verses-p {
+  line-height: 1.5;
+  /* white-space: pre-line; */
+  white-space: pre-wrap;
+}
+
+.verse-div {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  gap: 1em;
+  margin: 2rem;
+}
+
+.verse-number {
+  align-self: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  max-width: 35px;
+  /* padding: 0.6rem 0.5rem; */
+  border-radius: 100%;
+  background: #7b2e2f;
+  color: #ffffff;
+}
