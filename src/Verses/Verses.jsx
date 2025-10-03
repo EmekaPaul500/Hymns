@@ -6,9 +6,11 @@ const Verses = () => {
   const location = useLocation();
   const hymn = location.state;
 
-  const h = hymn.verses.join("\n\n");
+  // const h = hymn.verses.join("\n\n");
 
-  console.log(h);
+  // const p = hymn.chorus.join("\n\n");
+
+  // console.log(p);
 
   console.log(hymn);
 
@@ -35,10 +37,15 @@ const Verses = () => {
         {hymn.verses.map((verse, index) => {
           let newIdx = index + 1;
           return (
-            <div key={newIdx} className="verse-div">
-              <div className="verse-number">{newIdx}</div>
-              <p className="verses-p">{verse}</p>
-            </div>
+            <>
+              <div key={newIdx} className="verse-div">
+                <div className="verse-number" key={newIdx}>
+                  {newIdx}
+                </div>
+                <p className="verses-p">{verse}</p>
+              </div>
+              {newIdx === 1 && <p className="chorus-p">{hymn.chorus}</p>}
+            </>
           );
         })}
 

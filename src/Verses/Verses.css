@@ -30,7 +30,13 @@
 
 .verses-div {
   width: 95%;
-  /* margin: 2rem auto; */
+}
+
+.chorus-p {
+  width: 80%;
+  margin: 2rem auto;
+  white-space: pre-wrap;
+  line-height: 1.5;
 }
 
 .verses-p {
