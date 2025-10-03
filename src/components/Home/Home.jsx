@@ -7,10 +7,11 @@ const Home = () => {
   const [value, setValue] = useState("");
 
   useEffect(() => {
-    fetch("/hymns.json")
+    fetch("/hymns_with_authors.json")
       .then((res) => res.json())
       .then((data) => {
         setData(data.hymns);
+        // console.log(data.hymns);
       })
       .catch((err) => {
         console.log(err);
@@ -52,6 +53,7 @@ const Home = () => {
                 title={hymnJsx.title}
                 verses={hymnJsx.verses}
                 chorus={hymnJsx.chorus}
+                author={hymnJsx.author}
               />
             );
           })}

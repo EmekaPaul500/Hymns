@@ -10,6 +10,8 @@ const Verses = () => {
 
   console.log(h);
 
+  console.log(hymn);
+
   return (
     <section>
       <header className="verses-header">
@@ -24,7 +26,7 @@ const Verses = () => {
               <img src="./Images/church_logo.png" alt="Church logo" />
             </figure>
             <h1>{hymn.title}</h1>
-            <p>By John Newton</p>
+            <p>{hymn.author}</p>
           </div>
         </div>
       </header>

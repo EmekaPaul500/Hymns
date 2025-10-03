@@ -1,11 +1,12 @@
 import "./Hymn.css";
 import { Link } from "react-router-dom";
 
-const Hymn = ({ number, title, verses, chorus }) => {
+const Hymn = ({ number, title, verses, chorus, author }) => {
   const hymn = {
     title: title,
     chorus: chorus,
     verses: verses,
+    author: author,
   };
 
   const c = verses.map((verse) => {
@@ -14,7 +15,7 @@ const Hymn = ({ number, title, verses, chorus }) => {
     return [...lines];
   });
 
-  console.log(c);
+  // console.log(c);
   return (
     <div className="hymn-div">
       <figure>
